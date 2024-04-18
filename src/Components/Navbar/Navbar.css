@@ -1,0 +1,288 @@
+a[title]:hover:after {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+a[title]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.SideNavbarMain {
+  height: 100vh;
+  flex-shrink: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  background-color: #0e1629;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: fit-content;
+  padding: 20px 0;
+}
+.SideNavbar {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  padding: 0 20px;
+}
+.SideNavbarLogo img {
+  width: 40px;
+  height: 40px;
+}
+.SideNavbarMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.SideNavbarMenu ul li {
+  text-align: center;
+  margin-bottom: 18px;
+}
+.NavItemSelected a {
+  color: #5da394 !important;
+}
+.SideNavbarMenu ul li a {
+  color: #5c647b;
+  text-decoration: none;
+}
+.SideNavbarMenu ul li a span {
+  font-size: 26px;
+}
+.LogoutButton {
+  color: #5c647b;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  
+}
+.LogoutButton:hover {
+  color: #a35d5d !important;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (min-width: 620px) {
+
+  a[title]:hover:after {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none;
+  }
+  
+  a[title]:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .SideNavbarMain {
+    height: 100vh;
+    flex-shrink: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: #0e1629;
+    overflow-x: hidden;
+    transition: 0.5s;
+    width: fit-content;
+    padding: 20px 0;
+  }
+  
+  .SideNavbar {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .SideNavbarLogo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .SideNavbarMenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .SideNavbarMenu ul li {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  
+  .NavItemSelected a {
+    color: #5da394 !important;
+  }
+  
+  .SideNavbarMenu ul li a {
+    color: #5c647b;
+    text-decoration: none;
+  }
+  
+  .SideNavbarMenu ul li a span {
+    font-size: 26px;
+  }
+  
+  .LogoutButton {
+    color: #5c647b;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .LogoutButton:hover {
+    color: #a35d5d !important;
+    transition: all 0.4s ease-in-out;
+  }
+  .CloseButton{
+    display: none;
+  }
+  
+  @media (min-width: 620px) {
+    .ShowSidebarButton {
+      display: none;
+    }
+  }
+  
+ 
+}
+@media (max-width: 620px){
+   /* Original CSS for mobile */
+.SideNavbarMain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: #0e1629;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+  z-index: 1000; 
+}
+
+.ShowSidebarButton {
+  position: fixed;
+  top: 3px;
+  left: -7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.SideNavbarMain.show {
+  width: 100px; 
+  overflow: hidden;
+}
+.LogoutButton {
+  color: #5c647b;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 40px;
+  
+}
+.SideNavbar {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.SideNavbarLogo img {
+  width: 40px;
+  height: 40px;
+}
+
+.SideNavbarMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.SideNavbarMenu ul li {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.NavItemSelected a {
+  color: #5da394 !important;
+}
+
+.SideNavbarMenu ul li a {
+  color: #5c647b;
+  text-decoration: none;
+}
+
+.SideNavbarMenu ul li a span {
+  font-size: 26px;
+}
+
+.CloseButton {
+  display: block; /* Show close button on mobile */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; 
+  margin-right: 9px;
+  color: rgb(37, 49, 228);
+}
+
+.LogoutButton {
+  color: #5c647b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.LogoutButton:hover {
+  color: #a35d5d !important;
+  transition: all 0.4s ease-in-out;
+}
+
+
+}

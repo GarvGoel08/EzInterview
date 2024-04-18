@@ -1,0 +1,26 @@
+.NotificationFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    gap: 18px;
+    position: absolute;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 5px;
+    z-index: 109;
+}
+.Notification{
+    border-radius: 14px;
+    font-size: 7px;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    padding: 0 20px;
+    background-color: rgb(223, 71, 71);
+}
+.Notification h1{
+    font-size: 15px;
+    margin: 0;
+    padding: 14px;
+    font-weight: 400;
+}

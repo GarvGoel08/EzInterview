@@ -1,0 +1,40 @@
+.candidate-feedback-list-container {
+    padding: 20px;
+  }
+  
+  .candidate-feedback-list-container h2 {
+    text-align: center;
+  }
+
+
+
+  .interview-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+  }
+  
+  th, td {
+    padding: 16px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: white;
+    text-align: left;
+  }
+
+  
+  
+  
+  .interview-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .interview-table {
+      overflow-x: auto;
+    }
+  }
+  

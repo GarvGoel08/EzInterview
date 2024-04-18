@@ -1,0 +1,33 @@
+.candidate-card{
+    padding: 18px 22px;
+    justify-content: space-between;
+    border-radius: 4px;
+    align-items: center;
+    border: none;
+    border-bottom: #dedede 1px solid;
+}
+.candidate-card-header{
+    width: 33%;
+}
+.candidate-card-button{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 33%;
+    gap: 12px;
+}
+.candidate-card-status{
+    text-align: center;
+    width: 33%;
+}
+.candidate-name{
+    font-weight: 550;
+}
+.create-desktop{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}

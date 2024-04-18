@@ -1,0 +1,21 @@
+.candidate-mobile-card{
+    padding: 26px 20px;
+    border-radius: 12px;
+    border: #dedede 1px solid;
+    gap: 42px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.candidate-card-footer button{
+    flex-grow: 1;
+}
+.candidate-card-footer{
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    display: flex;
+}
+.candidate-para{
+    margin: 12px 0;
+    text-wrap: wrap;
+}

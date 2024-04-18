@@ -1,0 +1,326 @@
+/* Candidates.css */
+
+/* Container for the entire component */
+/* CSS for the modal */
+.modal {
+  display: flex;
+  z-index: 1;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh !important;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+  margin-top: -150px;
+}
+@media only screen and (max-width: 400px) {
+  .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    margin-top: 300px !important;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto; /* Center horizontally */
+    top: 50%; /* Move the top edge to the middle */
+    transform: translateY(
+      -30%
+    ) !important; /* Offset by half of its own height */
+    padding: 20px;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 2400px) {
+  .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto; /* Center horizontally */
+    top: 50%; /* Move the top edge to the middle */
+    transform: translateY(
+      -30%
+    ) !important; /* Offset by half of its own height */
+    padding: 20px;
+    width: 40%;
+  }
+}
+
+.close {
+  color: transparent;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white !important;
+  background-image: url("../../../../public/Images/close.png");
+  background-size: cover; /* Adjust the background size if needed */
+  background-position: center; /* Center the background image */
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(83, 154, 141, 0.5);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(83, 154, 141, 0.5);
+  box-shadow: 0px 0px 30px 0px rgba(83, 154, 141, 0.5);
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  filter: brightness(90%);
+  cursor: pointer;
+}
+
+.candidates-container {
+  font-family: Arial, sans-serif;
+  padding: 24px 36px;
+  overflow-y: auto;
+  max-height: 100vh;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Search bar styles */
+input[type="text"] {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #e6e7ec;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Tabs styles */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  background: white;
+  margin-bottom: 16px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.Active {
+  border-bottom: 3px solid #0e1629;
+}
+
+/* Table styles */
+.candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+th,
+td {
+  padding: 16px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: white;
+  text-align: left;
+}
+
+.create-candidate {
+  background-color: rgb(160, 160, 247);
+  border-radius: 10px;
+}
+.create-candidate1 {
+  background-color: rgb(160, 160, 247);
+  padding: 10 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+/* Active status styles */
+.active-status {
+  color: blue;
+}
+
+/* Pagination styles (customize as needed) */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Example: Add styles for previous and next buttons */
+.pagination button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.leftdev {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 30px;
+  height: 7px; /* Adjust thickness of lines as needed */
+  transform-origin: center;
+  transform: rotate(45deg);
+  background-color: #539a8d;
+  border-radius: 10px;
+  padding-left: 0%;
+  padding-right: 0%;
+  box-sizing: border-box;
+}
+
+.rightdev {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  width: 7px;
+  border-radius: 10px; /* Adjust thickness of lines as needed */
+  height: 60%;
+  transform-origin: center;
+  transform: rotate(45deg);
+  background-color: #539a8d;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  box-sizing: border-box;
+}
+.close:hover .rightdev {
+  transition: all 0.5s;
+  padding-top: 25%;
+  padding-bottom: -40%;
+  background-color: #a0a0f7;
+}
+.circle-right {
+  height: 7px;
+  width: 7px;
+  background-color: #0e1629;
+  border-radius: 50%;
+  margin-left: 80%;
+}
+.circle-left {
+  position: absolute;
+  top: 0%;
+  height: 7px;
+  width: 7px;
+  background-color: #0e1629;
+  border-radius: 50%;
+}
+.close:hover .leftdev {
+  transition: all 0.5s;
+  background-color: #a0a0f7;
+  padding-left: 11px;
+  padding-right: 19px;
+}
+.close:hover .circle-left {
+  transition: all 0.5s;
+}
+.circle-right1 {
+  height: 7px;
+  width: 7px;
+  background-color: #0e1629;
+  border-radius: 50%;
+}
+.circle-left1 {
+  position: absolute;
+  top: 80%;
+  height: 7px;
+  width: 7px;
+  background-color: #0e1629;
+  border-radius: 50%;
+  margin-top: 0%;
+}
+.close:hover .circle-left1 {
+  transition: all 0.5s;
+  margin-top: -180%;
+}
+.candidates-mob-table {
+  display: none;
+}
+.Filters-Div{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filters{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.candidates-filter{
+  padding: 12px 10px!important;
+  border: 1px solid #8e8e8e!important;
+  box-sizing: border-box!important;
+  border-radius: 4px!important;
+  background-color: #ffffff!important;
+  color: #8e8e8e!important;
+  font-size: 14px!important;
+  outline: none!important;
+  width: auto!important;
+  margin-bottom: 0!important;
+}
+.candidates-filter-select{
+  padding-right: 32px!important;
+}
+@media (max-width: 1128px) {
+  .candidates-table {
+    display: none;
+  }
+  .candidates-mob-table {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 18px;
+  }
+  .candidate-laptop{
+      display: none;
+  }
+}
+
+@media (max-width: 860px){
+  .filters{
+    flex-direction: column;
+    width: 100%;
+  }
+  .candidates-filter{
+    width: 100%!important;
+  }
+  .Filters-Div{
+    flex-direction: column;
+  }
+}
+@media (max-width: 568px){
+  .tabs{
+    flex-direction: column;
+  }
+  .tabs-main{
+    flex-direction: column;
+  }
+}

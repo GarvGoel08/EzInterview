@@ -1,0 +1,71 @@
+.InterviewDetailsPanel{
+    padding: 40px 60px 10px 60px;
+}
+.InterviewList{
+    padding: 40px 20px;
+
+}
+.Heading{
+    font-size: 24px;
+    font-weight: 450;
+    margin-bottom: 24px;
+}
+
+.CurrentRoleText{
+    font-size: 14px;
+    font-weight: 440;
+    margin: 0;
+    padding: 0;
+}
+.InterviewCounter{
+}
+.filters-main{
+    margin-top: 46px;
+}
+.Filter-Input{
+    box-sizing: border-box;
+    background: white!important;
+    font-size: 16px!important;
+    width: 100%!important;
+    height: 40px!important;
+    padding: 0 12px!important;
+    border: rgb(194, 194, 194) 1px solid!important;
+    margin: 0!important;
+}
+.Filter-text{
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.Filter-Submit{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.InterviewList{
+    flex-grow: 1;
+}
+
+@media (max-width: 1215px){
+    .InterviewMainFlex{
+        flex-wrap: wrap;
+        padding-inline: 16px;
+    }
+    .InterviewDetailsPanel{
+        width: 100%;
+        padding: 40px 20px 10px 20px;
+    }
+}
+
+@media (max-width: 670px){
+    .InterviewCounter{
+        display: none;
+    }
+    .InterviewDetailsPanel{
+        padding: 20px 20px 10px 20px;
+    }
+    .filters-main{
+        margin-top: 22px;
+    }
+}

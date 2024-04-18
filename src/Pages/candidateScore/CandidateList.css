@@ -1,0 +1,32 @@
+.candidate-list-container {
+    
+    width: 100%; /* Set the width of the container */
+}
+
+.candidate-list-heading {
+    margin-bottom: 20px;
+}
+
+
+.candidate-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+  }
+  
+  th, td {
+    padding: 16px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: white;
+    text-align: left;
+  }
+
+
+
+.candidate-table tr:hover {
+    background-color: #f2f2f2;
+}

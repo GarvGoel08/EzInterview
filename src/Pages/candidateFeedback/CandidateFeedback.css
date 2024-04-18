@@ -1,0 +1,44 @@
+.feedback-container {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    max-height: calc( 100vh - 40px );
+    overflow-y: auto;
+    box-sizing: border-box;
+    
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-table th, .feedback-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form div {
+    margin-bottom: 10px;
+  }
+  
+  .submit-button, .edit-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover, .edit-button:hover {
+    background-color: darkblue;
+  }
+  

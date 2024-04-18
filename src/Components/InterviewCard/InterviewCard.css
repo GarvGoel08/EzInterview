@@ -1,0 +1,43 @@
+.InterviewCard-main{
+    border-bottom: rgb(196, 196, 196) 1px solid;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.InterviewCandidate{
+    flex-wrap: wrap;
+}
+.InterviewCandidate-Role{
+    color: rgb(101, 101, 101);
+    margin-left: 4px;
+}
+.Interview-Time{
+    color: rgb(101, 101, 101);
+    margin-top: 4px;
+    font-size: 14px;
+}
+.StartInterview{
+    padding: 10px 20px;
+    border: 0;
+    text-decoration: none;
+    background: rgb(42, 159, 255);
+    color: white;
+    margin: 0;
+    width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+@media (max-width: 1215px){
+    .InterviewCard-main{
+        flex-direction: column;
+        align-items: normal;
+        gap: 10px;
+    }
+    .StartInterview{
+        width: 100%;
+    }
+}
