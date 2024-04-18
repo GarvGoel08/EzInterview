@@ -145,17 +145,63 @@ const Candidates = ({ setProgress }) => {
           </div>
         )}
       </div>
-      <div className="candidate-laptop">
-        {filteredCandidates.map((candidate) => (
-          <CandidateCard
-            key={candidate._id}
-            candidate={candidate}
-            deleteCandidate={deleteCandidate}
-            hireCandidate={hireCandidate}
-            notSelectedCandidate={notSelectedCandidate}
-          />
-        ))}
-      </div>
+      <table className="candidates-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredCandidates.map((candidate) => (
+            <tr key={candidate._id}>
+              <td>
+                <Link to={`/candidates/${candidate._id}`}>
+                  {candidate.name}
+                </Link>
+              </td>
+              <td>{candidate.email}</td>
+              <td>{candidate.role}</td>
+              <td className="active-status">{candidate.current_status}</td>
+              <td style={{ display: "flex", gap: "12px" }}>
+                <button
+                  className="create-candidate1"
+                  onClick={() => deleteCandidate(candidate._id)}
+                >
+                  Delete
+                </button>
+                {candidate.current_status === "Hired" ? (
+                  <button className="create-candidate1" disabled>
+                    Hired
+                  </button>
+                ) : (
+                  <button
+                    className="create-candidate1"
+                    onClick={() => hireCandidate(candidate._id)}
+                  >
+                    Hire
+                  </button>
+                )}
+                {candidate.current_status === "Not Selected" ? (
+                  <button className="create-candidate1" disabled>
+                    Not Selected
+                  </button>
+                ) : (
+                  <button
+                    className="create-candidate1"
+                    onClick={() => notSelectedCandidate(candidate._id)}
+                  >
+                    Not Selected
+                  </button>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <div className="candidates-mob-table">
         {filteredCandidates.map((candidate) => (
           <CandidateMobileCard
